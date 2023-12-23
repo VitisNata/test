@@ -1,0 +1,36 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+}
+
+html,
+body {
+  font-family: $font-family;
+  font-size: $font-12;
+
+  color: $secondary-color;
+  overflow-x: hidden;
+}
+
+.container {
+  @include container();
+}
+
+.image {
+  width: 100%;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  padding: $p-2;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
